@@ -18,3 +18,13 @@ opt.smartcase = true
 
 -- Disable mouse while in nvim
 opt.mouse = ''
+
+-- Highlihgt Active Line
+opt.cursorline = true
+
+-- Clopboard
+opt.clipboard:append("unnamedplus")
+
+-- Split Window
+opt.splitright = true
+opt.splitbelow = true

@@ -1,6 +1,5 @@
 -- Status Line
 return {
-	-- https://github.com/nvim-lualine/lualine.nvim
 	'nvim-lualine/lualine.nvim',
 	opts = {
 		options = {
@@ -10,7 +9,9 @@ return {
 			lualine_x = { 'filetype' }
 		}
 	},
-	config = function (_, opts)
+	dependencies = { 'nvim-tree/nvim-web-devicons' },
+	config = function(_, opts)
 		require('lualine').setup(opts)
 	end
 }
+
